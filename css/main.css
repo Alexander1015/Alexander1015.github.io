@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(3,10,24);
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(3,10,24,0.6);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #A6A6A6;
+}
+
+nav #logo img {
+    height: 2rem;
+    margin: 0.75rem 2rem;
+}
+
+#slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#content-images-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.text-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+}
+
+#slider-text {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    text-align: center;
+    font-size: 15rem;
+}
+
+.effect-text {
+    text-align: center;
+    background: linear-gradient(0deg, rgba(166,166,166,1),rgba(255,255,255,1) 32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#content {
+    padding: 0rem;
+}
+
+/* #personal-information */
+.max {
+    font-size: 4rem;
+}
+
+.min{
+    font-size: 2rem;
+}
+
+.my-img {
+    background-color: #697079;
+    text-align: center;
+}
+
+.logo-img {
+    margin: 1rem auto;
+    width: 80%;
+    border-radius: 1rem;
+    box-shadow: 3px 5px 5px rgba(3,32,51,0.9);
+}
+
+.my-web {
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.my-projects {
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Contactos */
+.sup {
+    text-align: center;
+    margin: 1rem auto;
+    width: 60%;
+    border-radius: 1rem;
+    box-shadow: 3px 5px 5px rgba(3,32,51,0.9);
+    background-color: rgba(3,10,24,0.6);
+    transition: background-color .1s linear, width .1s ease-in;
+}
+
+.sup-pr {
+    text-align: center;
+    margin: 1rem auto;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 3px 5px 5px rgba(3,32,51,0.9);
+    background-color: rgba(105,112,121,1);
+    transition: background-color .1s linear, width .1s ease-in;
+}
+
+.sup:hover {
+    width: 70%;
+    background-color: rgba(3,10,24,0.8);
+}
+
+.sup a, .sup-pr a {
+    text-decoration: none;
+}
+
+.inf{
+    width: 100%;
+    padding: 1rem 1rem;
+}
+
+.inf img, .sup-pr img {
+    text-align: center;
+    max-height: 10rem;
+}
+
+.inf span, .sup-pr img {
+    font-size: 0.85rem;
+}
+
+.parrafo {
+    text-align: justify;
+    padding: 0.5rem 1rem;
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    padding: 1rem 0;
+    font-weight: bolder;
+}
+
+#blank {
+    height: 1rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.sup-git img {
+    margin: 0rem 1rem 1rem 0;
+    width: 4rem;
+}
+
+@media only screen and (max-width: 1080px) {
+    .text-slider {
+        display: none;
+    }
+
+    #slider-text {
+        display: none;
+    }
+
+    .name .max-name {
+        font-size: 2rem;
+    }
+    
+    .name .min-name {
+        font-size: 1rem;
+    }
+}
